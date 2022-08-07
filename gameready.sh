@@ -33,7 +33,7 @@ sudo add-apt-repository -y ppa:lutris-team/lutris
 sudo apt -y update
 sudo apt -y install lutris
 
-# INSTALL LUTRIS
+# INSTALL GAMEMODE
 echo "Installing Gamemode"
 sudo apt -y install meson libsystemd-dev pkg-config ninja-build git libdbus-1-dev libinih-dev build-essential
 git clone https://github.com/FeralInteractive/gamemode.git
