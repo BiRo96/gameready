@@ -70,7 +70,7 @@ if zenity --question --width 300 --title="Install Xanmod Kernel?" --text="THIS S
         sudo grub-mkconfig -o /boot/grub/grub.cfg
         zenity --info --width 200 --title="Success" --text="Xanmod kernel installed!"
     }
-fi
+fi;
 
 # INSTALL WINETRICKS DEPENDENCIES
 zenity --warning --title="Alright Listen Up" --width 300 --text="Now we're going to install dependencies for WINE like DirectX, Visual C++, DotNet and more.\\n Winetricks will try to install these dependencies for you, so it'll take some time.\\ nDo not panic if you don't receive visual feedback, it'll take time."
