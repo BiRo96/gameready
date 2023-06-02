@@ -66,7 +66,7 @@ if zenity --question --width 300 --title="Install Xanmod Kernel?" --text="THIS S
         echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
 	echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
         sudo pacman -Syu --noconfirm
-        sudo pacman -S linux-xanmod-edge linux-xanmod-edge-headers --noconfirm
+        sudo pacman -S linux-xanmod linux-xanmod-headers --noconfirm
         sudo grub-mkconfig -o /boot/grub/grub.cfg
         zenity --info --width 200 --title="Success" --text="Xanmod kernel installed!"
     }
