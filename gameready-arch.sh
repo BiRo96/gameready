@@ -64,7 +64,7 @@ if zenity --question --width 300 --title="Install Xanmod Kernel?" --text="THIS S
         sudo pacman-key --lsign-key FBA220DFC880C036
         sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
         echo "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
-	    echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
+	echo "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
         sudo pacman -Syu --noconfirm
         sudo pacman -S linux-xanmod-edge linux-xanmod-edge-headers --noconfirm
         sudo grub-mkconfig -o /boot/grub/grub.cfg
