@@ -15,7 +15,7 @@ echo -e "${YELLOW}Checking OS...${ENDCOLOR}"
 echo -e "${BLUE}Detected OS:${ENDCOLOR} `grep "^ID=" /etc/*-release | cut -d'=' -f2`"
 
 # FOR ARCH AND MANJARO
-if [[ `grep "^ID=" /etc/os-release | gawk -F '=' '{print $2}'` = arch ]] || [[ `grep "^ID=" /etc/os-release | cut -d'=' -f2` = manjaro ]];
+if [[ `grep "^ID=" /etc/os-release | cut -d'=' -f2` = arch ]] || [[ `grep "^ID=" /etc/os-release | cut -d'=' -f2` = manjaro ]];
 then
     # RUN GAMEREADY-ARCH.SH
     echo -e "\n\n${RED}<-- Running gameready-arch.sh -->${ENDCOLOR}"
@@ -23,7 +23,7 @@ then
     exit 0
     
     # FOR DEBIAN AND UBUNTU
-elif [[ `grep "^ID=" /etc/os-release | gawk -F '=' '{print $2}'` = debian ]] || [[ `grep "^ID=" /etc/os-release | cut -d'=' -f2` = ubuntu ]];
+elif [[ `grep "^ID=" /etc/os-release | cut -d'=' -f2` = debian ]] || [[ `grep "^ID=" /etc/os-release | cut -d'=' -f2` = ubuntu ]];
 then
     # RUN GAMEREADY-DEBIAN.SH
     echo -e "\n\n${RED}<-- Running gameready-ubuntu.sh -->${ENDCOLOR}"
