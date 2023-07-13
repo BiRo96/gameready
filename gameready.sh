@@ -8,7 +8,7 @@ GREEN="\e[32m"
 YELLOW="\e[33m"
 ENDCOLOR="\e[0m"
 
-. /etc/os-release
+source /etc/os-release
 
 # PRINT CHECKING OS
 echo -e "${YELLOW}Checking OS...${ENDCOLOR}"
