@@ -25,7 +25,7 @@ then
     exit 0
     
     # FOR DEBIAN AND UBUNTU
-elif [[ $ID_LIKE = debian ]] || [[ $ID_LIKE = ubuntu ]];
+elif [[ $ID_LIKE =~ (debian|ubuntu) ]];
 then
     # RUN GAMEREADY-DEBIAN.SH
     echo -e "\n\n${RED}<-- Running gameready-ubuntu.sh -->${ENDCOLOR}"
